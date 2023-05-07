@@ -79,9 +79,11 @@ const LoginPage = () => {
     }
 
     const resendHandler = () =>{
+        let newOtp = Math.floor(100000 + Math.random() * 900000);
+        sessionStorage.setItem('otp',newOtp);
         countDownTimer();
         setResend(false);
-        sendOtpMail();
+        sendOtpMail(newOtp);
     }
 
 
