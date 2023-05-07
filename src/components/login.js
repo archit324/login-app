@@ -36,7 +36,7 @@ const LoginPage = () => {
         function countDown (){
             if(count === 0){
                 clearInterval(counter);
-                setResend(true)
+                setResend(true);
             }else{
                 count--;
                 setCounter(count)
@@ -88,19 +88,18 @@ const LoginPage = () => {
 
 
     const OtpVerification = () =>{
-  
         return (
             <>
                 <div className = "inputBox "> 
                         <span className = "header-name"> Enter OTP recieved on your Email:</span>
                         <input type="text" inputMode= "numeric" placeholder="Please enter your OTP!" onChange={otpHandler} value={enterOtp}  required></input>
                 </div>
-                <p>Resend After {counter} sec.</p>
+                <p>Resend OTP after {counter} sec.</p>
                 <div className = "inputBox">
                         <input className="submit-button1" type="submit" value="Login">
                         </input>
                 </div>
-                {resend && <button id="resend" onClick = {resendHandler}>Resend Otp</button> }
+                {resend && <button id="resend" onClick = {resendHandler}>Resend OTP</button> }
         </>
         )
     }
