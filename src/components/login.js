@@ -13,8 +13,7 @@ const LoginPage = () => {
         e.preventDefault();
         if(enterOtp){
             const savedotp=sessionStorage.getItem('otp');
-         
-            if(savedotp == enterOtp){
+            if(parseInt(savedotp) === parseInt(enterOtp)){
                 navigate("/home")
                 sessionStorage.setItem('isAuthenticated',true);
                 sessionStorage.removeItem('otp');
