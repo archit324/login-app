@@ -11,3 +11,39 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body {
+  background: rgb(250,249,246);
+  background: linear-gradient(90deg, rgba(250,249,246,1) 11%, rgba(244,194,194,1) 81%, rgba(244,194,194,1) 94%);
+}
+
+
+.inputBox{
+    /* width: 30%; */
+    /* padding: 10px; */
+    margin: 10px;
+    color: black;
+}
+
+.inputBox > input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid white
+
+}
+
+
+.submit-button1{
+  color: white;
+  border: 1px solid white;
+  width: 94% !important;
+  background: #fd7d6c;
+  /* background: linear-gradient(90deg, rgba(250,249,246,1) 11%, rgba(221,46,46,1) 81%, rgba(244,194,194,1) 94%); */
+}
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(61deg, rgba(2,0,36,1) 0%, rgba(18,121,9,0.46) 35%, rgba(0,212,255,1) 100%) !important;
+}
