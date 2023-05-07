@@ -65,7 +65,7 @@ const LoginPage = () => {
       
     }
     const successful = (message) =>{
-        if(message="OK"){
+        if(message==="OK"){
             // navigate('/otpverification')
             console.log("Logged Succesfully")
         }else{

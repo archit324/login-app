@@ -4,8 +4,8 @@ import { useEffect } from "react";
 const HeaderComponent = () =>{
     const navigate = useNavigate();
     useEffect(()=>{
-        navigate('/login')
-    },[])
+        navigate('/login') 
+    },[navigate])
 
     return (
         <>
