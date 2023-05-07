@@ -49,9 +49,7 @@ const LoginPage = () => {
         let emailId = email.replace(/"/g,"'")
         if(email && generatedOtp){
             window.Email.send({
-                Host : "smtp.elasticemail.com",
-                Username : "archit32anand@gmail.com",
-                Password : "A9BEA3BF1F3545B0484819D519E15641E0FC",
+                SecureToken: "783aa352-d4a6-46ff-b4e9-1c92e37057b2",
                 To : emailId,
                 From : "archit786anand@gmail.com",
                 Subject : "OTP for login",
