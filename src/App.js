@@ -5,6 +5,7 @@ import {
 import HeaderComponent from './components/header';
 
 function App() {
+  //wrapper
   return (
     <div className="App">
       <HeaderComponent ></HeaderComponent>
